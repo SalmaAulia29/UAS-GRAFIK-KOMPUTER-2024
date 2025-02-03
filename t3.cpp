@@ -120,7 +120,6 @@ void Coklat() {
 
 }
 
-// salma
 void update(int value) { 
     if (isMoving) { 
         coklat.rotate += 1.0;   
@@ -212,10 +211,6 @@ void display() {
         }
         if (show) {
             Coklat();
-            glPushMatrix();
-            glTranslatef(4, coklat.translateY, 0.0);
-			Coklat(); 
-			glPopMatrix();
         }
     }
     glutSwapBuffers(); 
